@@ -2,7 +2,7 @@ package task1;
 import java.util.Iterator;
 
 
-public class Stack<T> implements Iterable {
+public class Stack<T> implements Iterable<T> {
     private Node<T> top;
     private int size;
 
@@ -24,7 +24,7 @@ public class Stack<T> implements Iterable {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             private Node<T> current = top;
 
             @Override
