@@ -1,0 +1,14 @@
+package task2;
+
+public class Circle extends FlatFigure {
+    private final double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double area() {
+        return Math.PI * Math.pow(radius,2);
+    }
+}
